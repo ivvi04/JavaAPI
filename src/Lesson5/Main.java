@@ -5,11 +5,11 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
         HashMap <String, ArrayList<Integer>> phoneBook = new HashMap<>();
-//        phoneBook = fillPhoneBook();
+        phoneBook = fillPhoneBook();
         Scanner scanner = new Scanner(System.in);
         int choice = 1;
         while (choice != 0){
-            System.out.println("Введите: 1 - добавить номер, 2 - вывести все записи, 0 - завершить");
+            System.out.println("Р’РІРµРґРёС‚Рµ: 1 - РґРѕР±Р°РІРёС‚СЊ РЅРѕРјРµСЂ, 2 - РІС‹РІРµСЃС‚Рё РІСЃРµ Р·Р°РїРёСЃРё, 0 - Р·Р°РІРµСЂС€РёС‚СЊ");
             choice = scanner.nextInt();
             scanner.nextLine();
             switch (choice) {
@@ -20,7 +20,7 @@ public class Main {
                     printAll(phoneBook);
                     break;
                 default:
-                    System.out.println("Введено неизвестное значение. Повторите ввод!");
+                    System.out.println("Р’РІРµРґРµРЅРѕ РЅРµРёР·РІРµСЃС‚РЅРѕРµ Р·РЅР°С‡РµРЅРёРµ. РџРѕРІС‚РѕСЂРёС‚Рµ РІРІРѕРґ!");
                     break;
             }
         }
@@ -28,9 +28,9 @@ public class Main {
     }
 
     public static void addContact(HashMap <String, ArrayList<Integer>> phoneBook, Scanner scanner){
-        System.out.println("Введите фамилию: ");
+        System.out.println("Р’РІРµРґРёС‚Рµ С„Р°РјРёР»РёСЋ: ");
         String name = scanner.nextLine();
-        System.out.println("Введите номер: ");
+        System.out.println("Р’РІРµРґРёС‚Рµ РЅРѕРјРµСЂ: ");
         int phone = scanner.nextInt();
         if(!phoneBook.containsKey(name)){
             phoneBook.put(name, new ArrayList<>());
@@ -52,12 +52,12 @@ public class Main {
     public static HashMap <String, ArrayList<Integer>> fillPhoneBook(){
         HashMap <String, ArrayList<Integer>> phoneBook = new HashMap<>() {
             {
-                put("Иванов", new ArrayList<Integer>() {
+                put("РРІР°РЅРѕРІ", new ArrayList<Integer>() {
                     {
                         add(67567545);
                     }
                 });
-                put("Смирнов", new ArrayList<Integer>() {
+                put("РЎРјРёСЂРЅРѕРІ", new ArrayList<Integer>() {
                     {
                         add(546456);
                         add(2324332);
@@ -65,14 +65,14 @@ public class Main {
                         add(12343);
                     }
                 });
-                put("Сидоров", new ArrayList<Integer>() {
+                put("РЎРёРґРѕСЂРѕРІ", new ArrayList<Integer>() {
                     {
                         add(76544554);
                         add(124257655);
 
                     }
                 });
-                put("Федоров", new ArrayList<Integer>() {
+                put("Р¤РµРґРѕСЂРѕРІ", new ArrayList<Integer>() {
                     {
                         add(14532545);
                         add(3546456);
