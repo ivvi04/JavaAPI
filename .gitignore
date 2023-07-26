@@ -3,7 +3,7 @@ out/
 !**/src/main/**/out/
 !**/src/test/**/out/
 .idea/
-.iml
+/JavaAPI.iml
 
 ### Eclipse ###
 .apt_generated
