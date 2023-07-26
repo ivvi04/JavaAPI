@@ -28,6 +28,59 @@
 А затем верните строку формата "Result: {цельное выражение}".
 Если выражение не имеет решений - верните строку "No solution".
 
+## Урок 2. Почему вы не можете не использовать API
+
+**[Задание 1](https://github.com/ivvi04/JavaAPI/blob/master/src/Lesson2/task1/Printer.java)**
+
+Дана строка sql-запроса:
+
+select * from students where
+
+Сформируйте часть WHERE этого запроса, используя StringBuilder. Пример данных для фильтрации приведены ниже в виде json-строки. Если значение null, то параметр не должен попадать в запрос.
+
+Пример:
+
+{"name": "Ivanov", "country": "Russia", "city": "Moscow", "age": "null"}
+
+Напишите свой код в методе answer класса Answer. Метод answer принимает на вход два параметра:
+
+String QUERY - начало SQL-запроса
+
+String PARAMS - JSON с параметрами
+
+**[Задание 2](https://github.com/ivvi04/JavaAPI/blob/master/src/Lesson2/task2/Printer.java)**
+
+Реализуйте алгоритм сортировки пузырьком числового массива, результат после каждой итерации запишите в лог-файл.
+
+Напишите свой код в методе sort класса BubbleSort. Метод sort принимает на вход один параметр:
+
+int[] arr - числовой массив
+
+После каждой итерации, ваш код должен делать запись в лог-файл 'log.txt' в формате год-месяц-день час:минуты {массив на данной итерации}.
+
+**[Задание 3](https://github.com/ivvi04/JavaAPI/blob/master/src/Lesson2/task3/Printer.java)**
+
+Внутри класса Answer напишите метод answer, который распарсит json и, используя StringBuilder, создаст строки вида:
+
+Студент [фамилия] получил [оценка] по предмету [предмет].
+На вход метода answer подаются аргументы:
+
+* String JSON
+* String ELEMENT1
+* String ELEMENT2
+* String ELEMENT3
+
+**[Задание 4](https://github.com/ivvi04/JavaAPI/blob/master/src/Lesson2/task4/Printer.java)**
+
+Возьмите код от калькулятора с прошлого урока. К этому калькулятору нужно добавить логирование.
+
+Логи запишите в файл log.txtв формате:
+
+* "гггг-мм-дд чч:мм User entered the first operand = {первое число}"
+* "гггг-мм-дд чч:мм User entered the operation = {оператор}"
+* "гггг-мм-дд чч:мм User entered the second operand = {второе число}"
+* "гггг-мм-дд чч:мм Result is {результат}"
+
 ## Урок 5. Хранение и обработка данных ч2: множество коллекций Map
 Формат сдачи: ссылка на подписанный git-проект.
 
