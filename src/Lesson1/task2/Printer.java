@@ -2,7 +2,7 @@ package Lesson1.task2;
 
 class Answer {
     public void printPrimeNums(){
-        // Напишите свое решение ниже
+        // РќР°РїРёС€РёС‚Рµ СЃРІРѕРµ СЂРµС€РµРЅРёРµ РЅРёР¶Рµ
         for (int i = 1; i <= 1000; i++) {
             boolean isPrimeNumber = true;
 
@@ -19,7 +19,7 @@ class Answer {
     }
 }
 
-// Не удаляйте этот класс - он нужен для вывода результатов на экран и проверки
+// РќРµ СѓРґР°Р»СЏР№С‚Рµ СЌС‚РѕС‚ РєР»Р°СЃСЃ - РѕРЅ РЅСѓР¶РµРЅ РґР»СЏ РІС‹РІРѕРґР° СЂРµР·СѓР»СЊС‚Р°С‚РѕРІ РЅР° СЌРєСЂР°РЅ Рё РїСЂРѕРІРµСЂРєРё
 public class Printer{
     public static void main(String[] args) {
 

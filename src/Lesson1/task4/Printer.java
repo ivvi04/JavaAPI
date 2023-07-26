@@ -7,7 +7,7 @@ import java.nio.file.Paths;
 
 class Equation {
     public static String getSolution(String str) {
-        // Введите свое решение ниже
+        // Р’РІРµРґРёС‚Рµ СЃРІРѕРµ СЂРµС€РµРЅРёРµ РЅРёР¶Рµ
         try {
             Path path = Paths.get(str);
             String content = Files.readString(path);
@@ -49,7 +49,7 @@ class Equation {
 }
 
 
-// Не удаляйте этот класс - он нужен для вывода результатов на экран и проверки
+// РќРµ СѓРґР°Р»СЏР№С‚Рµ СЌС‚РѕС‚ РєР»Р°СЃСЃ - РѕРЅ РЅСѓР¶РµРЅ РґР»СЏ РІС‹РІРѕРґР° СЂРµР·СѓР»СЊС‚Р°С‚РѕРІ РЅР° СЌРєСЂР°РЅ Рё РїСЂРѕРІРµСЂРєРё
 public class Printer{
     public static void main(String[] args) {
         String file = "";

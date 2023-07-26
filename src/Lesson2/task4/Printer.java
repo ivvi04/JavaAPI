@@ -11,7 +11,7 @@ class Calculator {
     private static Logger logger = Logger.getLogger(Calculator.class.getName());
 
     public int calculate(char op, int a, int b) {
-        // Введите свое решение ниже
+        // Р’РІРµРґРёС‚Рµ СЃРІРѕРµ СЂРµС€РµРЅРёРµ РЅРёР¶Рµ
         int result = 0;
         FileHandler fileHandler = null;
 
@@ -38,7 +38,7 @@ class Calculator {
                     result = a * b;
                     break;
                 default:
-                    throw new IllegalArgumentException("Некорректный оператор: " + op);
+                    throw new IllegalArgumentException("РќРµРєРѕСЂСЂРµРєС‚РЅС‹Р№ РѕРїРµСЂР°С‚РѕСЂ: " + op);
             }
 
             logger.log(Level.FINE,"User entered the first operand = " + a);
@@ -53,7 +53,7 @@ class Calculator {
     }
 }
 
-// Не удаляйте этот класс - он нужен для вывода результатов на экран и проверки
+// РќРµ СѓРґР°Р»СЏР№С‚Рµ СЌС‚РѕС‚ РєР»Р°СЃСЃ - РѕРЅ РЅСѓР¶РµРЅ РґР»СЏ РІС‹РІРѕРґР° СЂРµР·СѓР»СЊС‚Р°С‚РѕРІ РЅР° СЌРєСЂР°РЅ Рё РїСЂРѕРІРµСЂРєРё
 public class Printer {
 
     private static final String LOG_FILE_PATH = "log.txt";
@@ -64,7 +64,7 @@ public class Printer {
         int b = 0;
 
         if (args.length == 0) {
-            // При отправке кода на Выполнение, вы можете варьировать эти параметры
+            // РџСЂРё РѕС‚РїСЂР°РІРєРµ РєРѕРґР° РЅР° Р’С‹РїРѕР»РЅРµРЅРёРµ, РІС‹ РјРѕР¶РµС‚Рµ РІР°СЂСЊРёСЂРѕРІР°С‚СЊ СЌС‚Рё РїР°СЂР°РјРµС‚СЂС‹
             a = 3;
             op = '+';
             b = 7;

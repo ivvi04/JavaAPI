@@ -2,7 +2,7 @@ package Lesson2.task1;
 
 class Answer {
     public static StringBuilder answer(String QUERY, String PARAMS){
-        // Напишите свое решение ниже
+        // РќР°РїРёС€РёС‚Рµ СЃРІРѕРµ СЂРµС€РµРЅРёРµ РЅРёР¶Рµ
         String[] params = PARAMS.replace("{", "")
                 .replace("}", "")
                 .replaceAll("\"", "")
@@ -27,14 +27,14 @@ class Answer {
 }
 
 
-// Не удаляйте этот класс - он нужен для вывода результатов на экран и проверки
+// РќРµ СѓРґР°Р»СЏР№С‚Рµ СЌС‚РѕС‚ РєР»Р°СЃСЃ - РѕРЅ РЅСѓР¶РµРЅ РґР»СЏ РІС‹РІРѕРґР° СЂРµР·СѓР»СЊС‚Р°С‚РѕРІ РЅР° СЌРєСЂР°РЅ Рё РїСЂРѕРІРµСЂРєРё
 public class Printer{
     public static void main(String[] args) {
         String QUERY = "";
         String PARAMS = "";
 
         if (args.length == 0) {
-            // При отправке кода на Выполнение, вы можете варьировать эти параметры
+            // РџСЂРё РѕС‚РїСЂР°РІРєРµ РєРѕРґР° РЅР° Р’С‹РїРѕР»РЅРµРЅРёРµ, РІС‹ РјРѕР¶РµС‚Рµ РІР°СЂСЊРёСЂРѕРІР°С‚СЊ СЌС‚Рё РїР°СЂР°РјРµС‚СЂС‹
             QUERY = "select * from students where ";
             PARAMS = "{\"name\":\"Ivanov\", \"country\":\"Russia\", \"city\":\"Moscow\", \"age\":\"null\"} ";
         }
